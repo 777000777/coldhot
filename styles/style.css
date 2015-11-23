@@ -1,7 +1,4 @@
-/*---------------------------------------------------------------------------------
-   Common Styles
----------------------------------------------------------------------------------*/
-/*float styles*/
+
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -184,7 +181,7 @@ h2 {
 	line-height: 1em;
 	border-top-left-radius: 1px;
 	border-top-right-radius: 1px;
-	color: #D0AB65
+	color: #D0AB65;
 }
 
 .game p {
@@ -247,19 +244,21 @@ input:focus {
 }
 
 ::-webkit-input-placeholder {
-   color: #FFF;
+   color: grey;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #FFF;
+   color: grey;
+   
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #FFF; 
+   color: grey;
+    
 }
 
 :-ms-input-placeholder {  
-   color: #FFF; 
+   color: grey; 
 }
 
 ul.guessBox {
@@ -283,4 +282,14 @@ ul.guessBox li {
 	width: 95%;
 	margin: 0.2em;
 	color: black;
+}
+
+#instructions {
+	text-align: center;
+	color: #D0AB65;
+	width: 300px;
+	margin: auto;
+	margin-bottom: 30px;
+	line-height: 1.25;
+
 }

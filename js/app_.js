@@ -11,9 +11,9 @@ $(document).ready(function() {
 
 	secretNumGenerator();
 
-
+//
 	function lessGuesses() {
-		if (userGuess === secretNumber) {
+		if (userGuess===secretNumber) {
 			setFeedback("you win");
 			finish = true;
 		} else if ((secretNumber - userGuess) > 65) {
@@ -45,14 +45,13 @@ $(document).ready(function() {
 		} else if ((secretNumber - userGuess) > 0.5) {
 			setFeedback("We're inside the SUN!");
 		} else {
-			setFeedback("you win!");
 		}
 	}
 
 
 
 	function moreGuesses() {
-		if (userGuess === secretNumber) {
+		if (userGuess===secretNumber) {
 			setFeedback("you win");
 			finish = true;
 		} else if ((userGuess - secretNumber) > 65) {
@@ -84,7 +83,6 @@ $(document).ready(function() {
 		} else if ((userGuess - secretNumber) > 0.5) {
 			setFeedback("We're inside the SUN!");
 		} else {
-				setFeedback("you win!");
 
 		}
 	}
@@ -130,7 +128,8 @@ $(document).ready(function() {
 		if (finish) {
 			setFeedback("You already won! Start new game.");
 		} else {
-		userGuess = $("#userGuess").val();
+		userGuess = parseInt($("#userGuess").val());
+		
 		checkInput();
 		}
 	});
