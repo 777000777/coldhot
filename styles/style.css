@@ -181,7 +181,7 @@ h2 {
 	line-height: 1em;
 	border-top-left-radius: 1px;
 	border-top-right-radius: 1px;
-	color: #D0AB65;
+	color: #FFF;
 }
 
 .game p {
@@ -286,10 +286,13 @@ ul.guessBox li {
 
 #instructions {
 	text-align: center;
-	color: #D0AB65;
+	color: #FFF;
 	width: 300px;
 	margin: auto;
 	margin-bottom: 30px;
 	line-height: 1.25;
+}
 
+#instructions ul {
+	padding-top: 30px;
 }
